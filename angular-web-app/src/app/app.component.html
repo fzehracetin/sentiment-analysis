@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<div class="limiter">
+		<div class="container-login100" [ngStyle]=
+		"{'background-image': 'url(./assets/images/bg-01.jpg)'}">
+			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+				<form #f="ngForm" (ngSubmit)="determineSentiment(myInput.value)"
+				class="login100-form validate-form">
+					<span class="login100-form-title p-b-49" [ngStyle]="{'font-family':'tahoma'}">
+						Sentiment Analysis
+					</span>
+
+					<div class="wrap-input100 validate-input m-b-23" data-validate =
+					"Sentence is required">
+						<span class="label-input100" [ngStyle]="{'font-family':'tahoma',
+						'font-size': '20px'}">Sentence</span>
+						<input class="input100" type="text" #myInput name="sentence"
+						[ngStyle]="{'font-family':'tahoma'}" placeholder="Type your sentence">
+					</div>
+
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button (click)="determineSentiment(myInput.value)"
+							class="login100-form-btn" [ngStyle]="{'font-family':'tahoma'}">
+							Determine the Sentiment </button>
+						</div>
+					</div>
+
+					<div *ngIf="!sentHidden" class="text-left p-t-20 p-b-5">
+					<b>	Sentence: </b> {{sentence}}
+					</div>
+
+					<div *ngIf="!sentHidden" class="text-left p-t-5 p-b-5">
+					<b>	Prediction: </b> {{prediction}}
+					</div>
+
+					<div *ngIf="!sentHidden" class="text-left p-t-5 p-b-5">
+					<b>	Probability: </b> {{confidence}}
+					</div>
+
+					<div *ngIf="!sentHidden" class="text-right p-t-5 p-b-5"
+					[ngStyle]="{'font-size': '15px'}" >
+					<i> (Probability < 0.5 : Negative)</i> <br>
+					<i> (Probability > 0.5 : Positive)</i>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
