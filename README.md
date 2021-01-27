@@ -11,7 +11,7 @@ Flask Rest Api uses http://127.0.0.1:8080/ port and Angular web app uses http://
 * With httpie in Unix: ```http http://127.0.0.1:8080/ query=='örnek metin' ```
 
 ## Angular Web App
-It served at http://localhost:4200/ port.
+It serves at http://localhost:4200/ port.
 
 #### App Before Sending Requests
 
