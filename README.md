@@ -1,4 +1,4 @@
-# cbot-sentiment-analysis
+# sentiment-analysis
 
 Turkish Sentiment Analysis app with negative and positive classes. It uses [Fixy Sentiment Analysis Model](https://github.com/Fixy-TR/fixy) at the backend. Flask Rest Api and Angular web app work separately. So, they have to run separately. For Flask app use the ```python app.py``` command under this directory. Under the angular-web-app directory use the ```ng serve``` command for Angular Web App.
 
