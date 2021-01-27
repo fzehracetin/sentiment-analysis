@@ -15,7 +15,7 @@ It served at http://localhost:4200/ port.
 
 #### App Before Sending Requests
 
-<img src="https://github.com/fzehracetin/cbot-sentiment-analysis/blob/master/images/sentiment%20analysis.JPG" width=1000 height=500>
+<img src="https://github.com/fzehracetin/cbot-sentiment-analysis/blob/master/images/sentiment%20analysis.JPG" width=700 height=400>
 
 #### Request 1
 
